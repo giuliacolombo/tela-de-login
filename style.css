@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Nanum+Myeongjo:wght@400;700&family=Zen+Loop&display=swap');
+body {
+    margin: 0;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.main-login {
+    background-image: url(login/folhas.png);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.left-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(247, 247, 247);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #977373;
+}
+
+.left-login > h1 {
+    color: grey;
+    font-size: 3vh;
+    padding: 70px 0px 0px 0px;
+    text-align: center;
+}
+
+.leftloginimage{
+    width: 100px;
+    padding: 0px 0px 70px 0px;
+}
+
+.right-login {
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(247, 247, 247);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #977373;
+}
+
+.card-login > h1 {
+    color: rgba(139, 103, 103, 0.644);
+    font-weight: 800;
+    margin: 0;
+    padding: 10px 10px 20px 10px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(202, 165, 165);
+    box-shadow: 0px 10px 40px #fafafa;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color:rgba(75, 54, 54, 0.644);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.textfield > input::placeholder{
+    color: black;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(92, 35, 78);
+    background: rgb(196, 124, 136);
+    cursor: pointer;
+    box-shadow: 0px 3px 20px 3px rgba(139, 103, 103, 0.644);
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > img {
+        display: none;
+    }
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1920px){
+    .left-login > img {
+     width: 85% !important;
+    }
+}
+
+.label-float{
+  position: relative;
+  padding: 16px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.label-float input{
+  border: 0;
+  border-bottom: 2px solid rgb(156, 128, 128);
+  outline: none;
+  min-width: 200px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -webkit-appearance:none;
+  border-radius:8px;
+  padding: 16px;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #863e3e;
+}
+
+.label-float input::placeholder{
+  color:transparent;
+}
+
+.label-float label{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  text-align:center;
+  padding: 0px 20px 0px 20px;
+}
+
+
+.label-float input:focus:required:invalid{
+  border-bottom: 2px solid #863e3e;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 15px;
+  margin-top: 0;
+  color: #b23939;
+}
+
+.icons {
+    color: #863e3e;
+    width: 20px;
+    font-size: 20px;
+}
+
+.card-login > a {
+    color: rgb(218, 67, 92);
+    padding: 0px 0px 10px 0px;
+}
